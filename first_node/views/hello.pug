@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	.wrapper
+		- const dogName = "bla";
+		h1 Hey this is a working pug file
+		p first name is
+			em  #{firstName} 
+			| and last name is
+			em  #{lastName}
+	img.someClass#someId(src='img.jpeg' alt=`dog${dogName}`)
